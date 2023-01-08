@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Public+Sans:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.3rem;
 }
 * p {
@@ -37,20 +38,19 @@ body {
   border-top: 0.13rem solid #e2e2e2;
 }
 .heading {
-  font-size: 1.25rem;
-  font-weight: bolder;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: rgb(107, 107, 107);
 }
 .itemsCount {
   margin-right: 5rem;
 }
 .five {
-  font-weight: bolder;
+  font-weight: 600;
   color: rgb(56, 55, 55);
-  font-size: 1.2rem;
 }
 .count {
-  font-size: 1.16rem;
+  font-size: 1.06rem;
 }
 /* blocks */
 .block {
@@ -67,10 +67,10 @@ body {
 .text {
   gap: 1rem;
 }
-.block h2 {
-  font-size: 1.5rem;
+.itemName > div {
+  font-size: 1.48rem;
   color: #36bca0;
-  font-weight: bold;
+  font-weight: 700;
 }
 .img {
   height: 7.3rem;
@@ -90,8 +90,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .description h4 {
-  color: rgb(71, 71, 71);
+  color: rgb(85, 84, 84);
+  font-size: 1rem;
 }
 .gift-sec {
   display: flex;
@@ -219,4 +221,24 @@ button {
 }
 .checkout i {
   opacity: 1;
+}
+
+/* bottom .block */
+.bottom-block {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.shop {
+  background: white;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.bottom-button button {
+  border-top-right-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
 }
