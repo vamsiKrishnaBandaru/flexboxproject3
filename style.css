@@ -3,10 +3,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-  line-height: 1.3rem;  
+  line-height: 1.3rem;
 }
 * p {
-  color: rgb(92, 91, 91);
+  color: rgb(97, 96, 96);
 }
 body {
   background: #f0efef;
@@ -14,41 +14,50 @@ body {
 .container {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
-
+.left-view {
+  width: 71%;
+}
+.right-view {
+  width: 21.55%;
+}
 .left-view,
 .right-view {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin: 0 1rem;
-}
-
-.right-view {
-  background: white;
-  padding: 1rem;
-  align-self: flex-start;
+  gap: 0.13rem;
 }
 
 .top-line {
   background: white;
   display: flex;
+  justify-content: space-between;
   padding: 1.3rem;
+  border-top: 0.13rem solid #e2e2e2;
+}
+.heading {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: rgb(107, 107, 107);
 }
 .itemsCount {
   margin-right: 5rem;
 }
 .five {
-  font-weight: bold;
+  font-weight: bolder;
+  color: rgb(56, 55, 55);
+  font-size: 1.2rem;
 }
-
+.count {
+  font-size: 1.16rem;
+}
 /* blocks */
 .block {
   display: flex;
   background: white;
   padding: 2rem 2rem;
-  /* gap: 1rem; */
+  gap: 1rem;
 }
 .text {
   gap: 1rem;
@@ -62,15 +71,13 @@ body {
   height: 7.3rem;
   padding: 0 3.7rem;
   background-color: rgb(240, 240, 240);
-
+  opacity: 0.9;
 }
+
 .text {
   display: flex;
   flex-direction: column;
-  padding: 0.7rem;
-}
-.text p {
-  /* width: 93%; */
+  padding: 0.6rem;
 }
 
 .itemName {
@@ -78,9 +85,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-.description {
-  /* font-size: 1rem; */
-  /* font-weight: bold; */
+.description h4 {
+  color: rgb(66, 63, 63);
 }
 .gift-sec {
   display: flex;
@@ -114,18 +120,98 @@ i {
 .price s {
   font-size: 0.88rem;
 }
-.quantity{
+.quantity {
   align-self: flex-start;
 }
+.quantity input {
+  border: none;
+  border: 0.04rem solid rgb(163, 161, 161);
+}
 .counter {
-  width: 4.2rem;
-  height: 3.3rem;
+  width: 4.1rem;
+  height: 3rem;
   font-size: large;
   display: flex;
-  padding: 1rem;
+  padding: 1.1rem;
 }
 .final-price {
   font-size: 1.3rem;
   align-self: flex-start;
   margin: 0.6rem 0;
+}
+
+/* right section */
+
+.right-view {
+  align-self: flex-start;
+  gap: 0.13rem;
+  border-top: 0.13rem solid #e2e2e2;
+}
+.cart-title {
+  background: white;
+  padding: 1.3rem;
+  font-size: 1.35rem;
+  font-weight: bolder;
+  color: rgb(107, 107, 107);
+}
+.cart {
+  background: white;
+  padding: 1.3rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.total-price-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.total {
+  font-size: 1.2rem;
+  color: gray;
+}
+.total-price {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: rgb(82, 81, 81);
+  border-bottom: 0.13rem solid #f0efef;
+  padding-bottom: 1.8rem;
+}
+.bottom-cart {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bottom-cart p {
+  line-height: 1.7rem;
+  color: gray;
+  font-size: 0.97rem;
+}
+.buttons {
+  display: flex;
+}
+button {
+  border: none;
+  font-size: 1rem;
+}
+.checkout button {
+  padding: 0.65rem 0.8rem;
+  background: #34bd9f;
+  border-top-left-radius: 0.35rem;
+  border-bottom-left-radius: 0.35rem;
+  color: white;
+  font-size: 1.1rem;
+}
+.cancel button {
+  padding: 0.6rem 0.8rem;
+  background: rgb(255, 255, 255);
+  color: rgb(77, 75, 75);
+  border-top-right-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+  font-size: 1.1rem;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.checkout i {
+  opacity: 1;
 }
