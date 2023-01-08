@@ -56,8 +56,13 @@ body {
 .block {
   display: flex;
   background: white;
-  padding: 2rem 2rem;
+  padding: 1.7rem;
   gap: 1rem;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+.block-1 {
+  display: flex;
 }
 .text {
   gap: 1rem;
@@ -77,7 +82,7 @@ body {
 .text {
   display: flex;
   flex-direction: column;
-  padding: 0.6rem;
+  padding: 1rem 1.3rem;
 }
 
 .itemName {
@@ -86,7 +91,7 @@ body {
   flex-direction: column;
 }
 .description h4 {
-  color: rgb(66, 63, 63);
+  color: rgb(71, 71, 71);
 }
 .gift-sec {
   display: flex;
@@ -115,7 +120,7 @@ i {
   text-align: right;
   align-self: flex-start;
   width: 7rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 .price s {
   font-size: 0.88rem;
@@ -150,17 +155,17 @@ i {
 .cart-title {
   background: white;
   padding: 1.3rem;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: bolder;
   color: rgb(107, 107, 107);
 }
 .cart {
   background: white;
-  padding: 1.3rem 1.6rem;
+  padding: 1.7rem 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 .total-price-sec {
   display: flex;
@@ -176,12 +181,12 @@ i {
   font-weight: 600;
   color: rgb(82, 81, 81);
   border-bottom: 0.13rem solid #f0efef;
-  padding-bottom: 1.8rem;
+  padding-bottom: 2rem;
 }
 .bottom-cart {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 .bottom-cart p {
   line-height: 1.7rem;
@@ -197,7 +202,7 @@ button {
 }
 .checkout button {
   padding: 0.65rem 0.8rem;
-  background: #34bd9f;
+  background: #18b391;
   border-top-left-radius: 0.35rem;
   border-bottom-left-radius: 0.35rem;
   color: white;
